@@ -1,0 +1,54 @@
+.header {
+ background-color: var(--bg-color-one);
+ padding: 0.5em 1em;
+ color: var(--color-one);
+}
+
+.header nav {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.header .title {
+ display: flex;
+}
+
+.header .title a {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+
+.header .title img {
+ height: 2em;
+ width: 2em;
+ padding: 0.1em 0;
+}
+
+.header .title h1 {
+ display: inline-block;
+ margin-left: 0.25em;
+ font-family: var(--font-chelsea-market);
+ font-size: 2em;
+}
+
+.header .actions .searchLink {
+ background-color: var(--bg-color-two);
+ color: var(--color-one);
+ padding: 0.25em;
+ border: 1px solid var(--color-one);
+ border-radius: 50%;
+ display: flex;
+}
+
+.header .actions .searchLink:hover {
+ background-color: var(--color-one);
+ color: var(--bg-color-one);
+}
+
+.header .actions .searchLink:active {
+ background-color: var(--color-one);
+ color: var(--bg-color-one);
+}

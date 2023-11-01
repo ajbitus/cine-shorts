@@ -1,0 +1,109 @@
+.footer {
+ background-color: var(--bg-color-one);
+ padding: 0.5em 1em;
+ color: var(--color-two);
+}
+
+.footer .footerTray {
+ display: flex;
+ justify-content: space-between;
+ position: relative;
+}
+
+.footer .footerTray .section {
+ width: 30%;
+ display: flex;
+ justify-content: space-between;
+}
+
+.footer .footerTray .section .actionLink {
+ font-size: 1.5em;
+ display: flex;
+ align-items: center;
+}
+
+.footer .footerTray .section .actionLink:hover {
+ color: var(--color-one);
+}
+
+.footer .footerTray .section .actionLink:active {
+ color: var(--color-one);
+}
+
+.footer .footerTray .primaryActionLink {
+ position: absolute;
+ left: calc(50% - (4em / 2));
+ top: -2.5em;
+ display: flex;
+ animation: shake 60s 5s ease-in-out infinite;
+}
+
+.footer .footerTray .primaryActionLink a {
+ display: inherit;
+ padding: 0.25em;
+ background-color: var(--color-one);
+ color: var(--bg-color-one);
+ font-size: 2.5em;
+ border-radius: 50%;
+}
+
+.footer .footerTray .primaryActionLink a:hover {
+ background-color: var(--color-two);
+ color: var(--bg-color-one);
+}
+
+.footer .footerTray .primaryActionLink a:active {
+ background-color: var(--color-two);
+ color: var(--bg-color-one);
+}
+
+@keyframes shake {
+ 0% {
+  transform: rotate(0deg);
+ }
+ 0.25% {
+  transform: rotate(12deg);
+ }
+ 0.75% {
+  transform: rotate(-12deg);
+ }
+ 1.25% {
+  transform: rotate(12deg);
+ }
+ 1.75% {
+  transform: rotate(-12deg);
+ }
+ 2.25% {
+  transform: rotate(12deg);
+ }
+ 2.75% {
+  transform: rotate(-12deg);
+ }
+ 3.25% {
+  transform: rotate(12deg);
+ }
+ 3.75% {
+  transform: rotate(-12deg);
+ }
+ 4.25% {
+  transform: rotate(12deg);
+ }
+ 4.75% {
+  transform: rotate(-12deg);
+ }
+ 5.25% {
+  transform: rotate(12deg);
+ }
+ 5.75% {
+  transform: rotate(-12deg);
+ }
+ 6.25% {
+  transform: rotate(12deg);
+ }
+ 6.5% {
+  transform: rotate(0deg);
+ }
+ 100% {
+  transform: rotate(0deg);
+ }
+}
