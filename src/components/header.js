@@ -9,8 +9,8 @@ export default function Header() {
   <header className={styles.header}>
    <nav>
     <div className={styles.title}>
-     <Link href={"/videos"}>
-      <img src="/cine-shorts/logo-inverted.png" alt="Cine Shorts Logo" />
+     <Link href={"/video"}>
+      <img src="/cine-shorts/assets/images/logo-inverted.png" alt="Cine Shorts Logo" />
       <h1>CineShorts</h1>
      </Link>
     </div>

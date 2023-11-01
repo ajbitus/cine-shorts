@@ -5,13 +5,14 @@
  display: flex;
  flex-direction: column;
  align-items: center;
- justify-content: space-between;
+ justify-content: flex-start;
 }
 
 .home .title {
  text-align: center;
  font-family: var(--font-chelsea-market);
  color: var(--color-one);
+ margin-bottom: 2em;
 }
 
 .home .title img {
@@ -20,42 +21,4 @@
  border-radius: 50%;
  box-shadow: 0 0 20px 0px;
  margin-bottom: 1em;
-}
-
-.home .indicator {
- padding: 2em 2em 1em;
- background-color: var(--color-one);
- color: var(--bg-color-one);
- position: relative;
-}
-
-.home .indicator.indicatorDismissed {
- visibility: hidden;
-}
-
-.home .indicator p:nth-child(2) {
- text-align: center;
- margin-top: 1em;
- animation: bounce-up-and-down 1s infinite alternate;
-}
-
-.home .indicator button.close {
- position: absolute;
- right: 0.5em;
- top: 0.5em;
- margin: 0;
- padding: 0;
- background-color: inherit;
- border: none;
- font-size: 1em;
- cursor: pointer;
-}
-
-@keyframes bounce-up-and-down {
- 0% {
-  transform: translateY(0);
- }
- 100% {
-  transform: translateY(-10px);
- }
 }

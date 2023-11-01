@@ -12,31 +12,11 @@ export default function Home() {
  return (
   <section className={styles.home}>
    <div className={styles.title}>
-    <img src="/cine-shorts/logo.png" alt="Cine Shorts Logo" />
+    <img src="/cine-shorts/assets/images/logo.png" alt="Cine Shorts Logo" />
     <h1>CineShorts</h1>
    </div>
    <div className={styles.description}>
     <p>Experience the cinema of by-gone era.</p>
-   </div>
-   <div
-    className={
-     showIndicator
-      ? styles.indicator
-      : `${styles.indicator} ${styles.indicatorDismissed}`
-    }
-   >
-    <p>Press here to watch videos...</p>
-    <p>
-     <FaArrowCircleDown />
-    </p>
-    <button
-     className={styles.close}
-     onClick={() => {
-      setShowIndicator(false);
-     }}
-    >
-     <FaWindowClose />
-    </button>
    </div>
   </section>
  );

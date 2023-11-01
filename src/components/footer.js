@@ -31,7 +31,7 @@ export default function Footer() {
      </Link>
     </div>
     <div className={styles.primaryActionLink}>
-     <Link href={"/videos"}>
+     <Link href={"/video"}>
       <FiFilm />
      </Link>
     </div>
